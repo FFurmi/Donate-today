@@ -5,7 +5,7 @@
 
 /* header  */
 header{
-    background: url("../images/donation1.jpg");
+    background: url("../images/donation1.jpg");  
     color: #ffffff;
     padding: 200px 200px;
     text-align: center;
@@ -133,11 +133,14 @@ main{
     display: flex;
     gap: 50px;
     justify-content: center;
+    align-items: center;
 }
 .item-img{
     width: 456px;
     height: 477px;
     border-radius: 5px;
+    
+    
 }
 .donate-about > div:first-child{
     margin-bottom: 100px;
