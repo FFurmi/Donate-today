@@ -5,6 +5,7 @@
 
 /* header  */
 header{
+    display: none;
     background: url("../images/donation1.jpg");  
     color: #ffffff;
     padding: 200px 200px;
@@ -177,11 +178,12 @@ main{
     background-color: #D9D9D9;
     margin-right: 0;
     padding-left: 10px;
-    width: 50%;
+    width: 60%;
 }
 
 /*Footer*/
 footer{
+    margin-top: 130px;
     text-align: center;
     padding: 50px 0;
     background-color: #0B0D17;
@@ -197,4 +199,42 @@ footer p{
     font-weight: 400;
     font-size: 14px;
     margin-top: 30px;
+}
+
+@media screen  and (max-width:576px){
+    main{
+        padding: 0 20px;
+    }
+    .donate-today, .donate-plan, .donate-plan > div:first-child, .donate-about, .get-update{
+        padding: 0 20px;
+    }
+    .donate-container, .donate-plan-container, .about-container{
+        flex-direction: column;
+    }
+    .get-button{
+        padding: 70px 50px;
+    }
+    
+}
+@media screen and (min-width:577px) and (max-width:992px){
+    main{
+        padding: 0 50px;
+    }
+    .donate-today, .donate-plan, .donate-plan > div:first-child, .donate-about, .get-update{
+        padding: 0 30px;
+    }
+    .donate-plan-container, .about-container{
+        flex-direction: column;
+    }
+    .about-container:last-child{
+        flex-direction: column-reverse;
+    }
+    .donate-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .get-button{
+        padding: 70px 50px;
+    }
+    
 }
